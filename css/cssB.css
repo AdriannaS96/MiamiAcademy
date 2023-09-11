@@ -1,0 +1,226 @@
+html
+{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+*, *:before, *:after 
+{
+  box-sizing: inherit;
+}
+
+
+.banner {
+  padding: 2rem 0;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-left: 0px;
+}
+
+
+.logo {
+  height: 75px;
+}
+
+.row {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.aboutus-img {
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+.aboutus-img img {
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.team4 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.bannerimage {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.bannerimage img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.container
+{
+  padding: 2rem;
+  text-align:center; 
+}
+
+.container p {
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+  color: black;
+}
+
+ul li {
+  color:black;
+  text-align: left;
+}
+
+
+ul li::before {
+  content: "\2022";
+  font-weight: bold; 
+  display: inline-block;
+  width: 1em; 
+  margin-left: -1em; 
+}
+
+.course-cards {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 300px;
+}
+
+.course-img {
+  width: 300px;
+  margin: 1rem 0;
+}
+
+.course-img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+  aspect-ratio: 1 / 1;
+}
+
+.course-content {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.course-content h6 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.course-header {
+  text-align: center;
+}
+
+@media screen and (min-width: 800px){
+  
+  .navbar-nav
+  {
+    float: none;
+    width: 100%;
+  }
+
+  .about-cards {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) 
+{
+
+  .container-fluid {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    text-align: left;
+  }
+
+  .container-contactus{
+    text-align: center;
+  }
+
+  .team4 {
+    flex-direction: row;
+  }
+
+  .bannerimage {
+    width: 400px;
+
+  }
+
+  .about-cards {
+    justify-content: space-evenly;
+  }
+
+  .aboutus-img {
+    width: 400px;
+    margin-bottom: 1rem;
+  }
+
+  .course-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 400px;
+  }
+
+}
+
